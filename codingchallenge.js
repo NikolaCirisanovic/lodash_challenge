@@ -60,7 +60,7 @@ console.log('Ordered code:', orderedCode)
 // 4. Add tax 10% to each product
 let giveTax = _.map(products, (e) => {
     return {
-        price: e.price * 1.10
+        price: Math.floor(e.price * 1.10)
         
     }
 })
